@@ -16,15 +16,5 @@ Scanner sc=new Scanner(System.in);
 
  */
 
-import java.util.Scanner;
-
 class TaskB1 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a;
-        int b;
-        a=sc.nextInt();
-        b=a*a;
-        System.out.println("chislo a="+a+", "+"a * a=" +b);
-    }
 }
