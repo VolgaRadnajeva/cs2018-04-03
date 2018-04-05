@@ -29,19 +29,6 @@ package by.it.radnajeva.lesson02;
 
 
 */
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.util.Scanner;
-
 class TaskC3 {
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-
-
-    }
 
 }
