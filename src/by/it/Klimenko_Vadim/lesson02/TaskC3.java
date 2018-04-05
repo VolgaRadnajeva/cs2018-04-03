@@ -1,5 +1,7 @@
 package by.it.Klimenko_Vadim.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -30,5 +32,9 @@ package by.it.Klimenko_Vadim.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int ves=sc.nextInt();
+    }
 
 }
