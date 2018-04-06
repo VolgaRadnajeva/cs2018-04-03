@@ -34,7 +34,6 @@ import java.util.Scanner;
 */
 import java.math.RoundingMode;
 class TaskC3 {
-
         public static void main (String[]args) {
             Scanner in = new Scanner(System.in);
             int weight = in.nextInt();
