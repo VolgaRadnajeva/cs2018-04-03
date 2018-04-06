@@ -19,7 +19,12 @@ class TaskC1 {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
         int b = in.nextInt();
-        System.out.println("Sum = " + (a + b));
+        int c = a + b;
+        System.out.println("Ввод:");
+        System.out.println(a + " " + b);
+        System.out.println(" ");
+        System.out.println("Вывод:");
+        System.out.println("Sum = " + c);
 
 
     }

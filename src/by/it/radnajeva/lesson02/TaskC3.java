@@ -39,7 +39,14 @@ class TaskC3 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int weight = in.nextInt();
+        double m = 3.86;
+        double e = 9.81;
+        double w = weight * m / e;
 
+        w = Math.round(w*100)/100.0d;;
+
+        System.out.println(w);
 
 
     }
