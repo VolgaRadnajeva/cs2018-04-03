@@ -34,19 +34,26 @@ import java.util.Scanner;
 */
 import java.math.RoundingMode;
 class TaskC3 {
-        public static void main(String[] args) {
+    public static double getWeight(int weight) {
+        return weight;
+    }
+        public static void main (String[]args){
             Scanner in = new Scanner(System.in);
             int weight = in.nextInt();
             double earth = 9.81;
             double mars = 3.86;
-            double getWeight=(weight/(earth/mars));
+            double getWeight = (weight / (earth / mars));
             getWeight = getWeight * 100;
             int i = (int) Math.round(getWeight);
-            getWeight = (double)i / 100;
-            System.out.println("Ввод:" + "\n" + weight);
-            System.out.println("Вывод:" + "\n" + getWeight);
+            getWeight = (double) i / 100;
 
+            float q= (float)weight;
+            System.out.println("Ввод :" + "\n" + q);
+
+            getWeight = getWeight * 100;
+            int j = (int) Math.round(getWeight);
+            getWeight = (double) j / 100;
+
+            System.out.println("Вывод :" + "\n" + getWeight);
         }
-
-
-    }
+        }
