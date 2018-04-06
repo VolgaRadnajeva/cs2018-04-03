@@ -1,5 +1,7 @@
 package by.it.Bondarchuk.lesson02;
 
+import java.util.Scanner;
+
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и 4 раза выводит их сумму с обозначением системы счисления на экран в
 ДЕСЯТИЧНОМ ДВОИЧНОМ ШЕСТНАДЦАТИРИЧНОМ ВОСЬМИРИЧНОМ виде
@@ -14,6 +16,24 @@ HEX:22+1a=3c
 OCT:42+32=74
 */
 class TaskC2 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("DEC:" + a + "+" + b + "=" + c);
+        String abin=Integer.toBinaryString(a);
+        String bbin=Integer.toBinaryString(b);
+        String cbin=Integer.toBinaryString(c);
+        System.out.println("BIN:" + abin + "+" + bbin + "=" + cbin);
+        String ahex=Integer.toHexString(a);
+        String bhex=Integer.toHexString(b);
+        String chex=Integer.toHexString(c);
+        System.out.println("HEX:" + ahex + "+" + bhex + "=" + chex);
+        String aoct=Integer.toOctalString(a);
+        String boct=Integer.toOctalString(b);
+        String coct=Integer.toOctalString(c);
+        System.out.println("OCT:" + aoct + "+" + boct + "=" + coct);
+    }
 
 }
