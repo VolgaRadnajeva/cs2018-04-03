@@ -12,6 +12,5 @@ class TaskA2 {
         for (int i = 0; i <5; i++) {
             System.out.println("Я начинаю изучать Java!");
         }
-
     }
 }
