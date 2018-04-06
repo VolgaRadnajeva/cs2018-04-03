@@ -2,6 +2,7 @@ package by.it.Klimenko_Vadim.lesson02;
 
 import java.util.Scanner;
 
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -31,10 +32,21 @@ import java.util.Scanner;
 
 
 */
+import java.math.RoundingMode;
 class TaskC3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int ves=sc.nextInt();
-    }
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            int weight = in.nextInt();
+            double earth = 9.81;
+            double mars = 3.86;
+            double getWeight=(weight/(earth/mars));
+            getWeight = getWeight * 100;
+            int i = (int) Math.round(getWeight);
+            getWeight = (double)i / 100;
+            System.out.println("Ввод:" + "\n" + weight);
+            System.out.println("Вывод:" + "\n" + getWeight);
 
-}
+        }
+
+
+    }
