@@ -20,12 +20,28 @@ package by.it.miakchilo.lesson03;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
-
-
-
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
+    public static int sumDigitsInNumber(int number) {
+        /* Обобщим для всех чисел, не только четырехзначных:
+        цифра в разряде с порядковым номером n, считая от единицы - это остаток от деления исходного числа на 10 в степени n,
+        который затем в свою очередь целочисленно делится на 10 в степени n-1
+        Например, в числе 5467 цифра 4 это (5467%1000= 467) и далее (467/100=4)
+        чтобы не связываться с Math.pow, которая возвращает double, используем переменную divider, которую будем умножать на 10 в цикле,
+        пока divider не станет больше исходного числа, т.е. пока число%divider не окажется равным исходному числу
+        Дивайдер наращиваем в начале тела цикла, а проверку условия делаем в конце, потому что на последней итерации divider будет как раз больше исходного числа,
+        но это допустимо лишь однажды.
+        Да, ну и будем брать исходное число по модулю, чтобы получился совсем  общий случай :)
+         */
+        int sumOfDigits=0;
+        int divider=1;
+        do {
+            divider*=10;
+            int digit= (Math.abs(number)%divider) / (divider/10);
+            sumOfDigits += digit;
+        } while (number%divider!=number);
+        return sumOfDigits;
+    }
 
 }

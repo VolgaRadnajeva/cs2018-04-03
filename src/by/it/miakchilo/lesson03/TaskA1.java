@@ -48,7 +48,7 @@ class TaskA1 {
         double dsum = i1+i2;
         double dsub = i1-i2;
         double dmul = i1*i2;
-        double ddiv= ((double)i1/i2);
+        double ddiv = ((double) i1)/i2;
         double dmod = i1%i2;
         System.out.printf("%d %d %d %d %d%n", sum, sub, mul, div, mod);
         System.out.println(dsum + " " + dsub + " " + dmul + " " + ddiv + " " + dmod);

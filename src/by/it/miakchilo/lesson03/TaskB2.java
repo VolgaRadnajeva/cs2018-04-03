@@ -29,6 +29,34 @@ Lesson 03. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
+import java.util.Scanner;
 class TaskB2 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a, b, c;
+        System.out.print("Введите коэффициенты a, b и c квадратного уравнения через пробел, нажмите [Enter]: ");
+        if (!sc.hasNextInt()) {
+            System.out.println("Неверный ввод!"); return;
+        }
+        a = sc.nextInt();
+        if (a==0) {
+            System.out.println("Коэффициент а не может быть равен нулю"); return;
+        }
+        /* следовало бы еще проверить что введены реальные числа для коэффициентов b и с, либо что они опущены, и следовательно равняются нулю,
+           но опустим для схематизма :)
+         */
+        b = sc.nextInt();
+        c = sc.nextInt();
+        double d = dis(a,b,c);
+        if (d>0) {
+            System.out.println( (b*-1+Math.sqrt(d)) / (2*a) + " " + (b*-1 - Math.sqrt(d)) / (2*a) );
+        } else if (d==0) {
+            System.out.println( ((double)b) / (2*a) * -1 );
+        } else {
+            System.out.println("Отрицательный дискриминант");
+        }
+    }
+    public static double dis(int a, int b, int c) {
+        return b*b-4*a*c;
+    }
 }
