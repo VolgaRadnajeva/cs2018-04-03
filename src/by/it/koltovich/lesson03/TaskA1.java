@@ -33,6 +33,25 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
 class TaskA1 {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int i=scanner.nextInt();
+        int j=scanner.nextInt();
+        int sum=i+j;
+        int sub=i-j;
+        int mui=i*j;
+        int div=i/j;
+        int mod=i%j;
+        System.out.println(sum+" "+sub+" "+mui+" "+div+" "+mod);
+        double dsum=i+j;
+        double dsub=i-j;
+        double dmui=i*j;
+        double ddiv=((double)i)/j;
+        double dmod=i%j;
+        System.out.println(dsum+" "+dsub+" "+dmui+" "+ddiv+" "+dmod);
+    }
 
 }
