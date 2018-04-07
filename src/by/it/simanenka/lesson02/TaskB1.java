@@ -16,5 +16,17 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
+import static java.lang.System.in;
+
 class TaskB1 {
+       public static void main(String[] args) {
+           System.out.println("Введите число");
+           Scanner sc=new Scanner(in);
+           int i = sc.nextInt();
+           System.out.println(i*i);
+
+
+    }
 }
