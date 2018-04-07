@@ -18,13 +18,13 @@ OCT:42+32=74
 class TaskC2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int sum=a+b;
-        System.out.println("DEC:"+a+"+"+b+"="+sum);
-        System.out.println("BIN:"+Integer.toBinaryString(a)+"+"+Integer.toBinaryString(b)+"="+Integer.toBinaryString(sum));
-        System.out.println("HEX:"+Integer.toHexString(a)+"+"+Integer.toHexString(b)+"="+Integer.toHexString(sum));
-        System.out.println("OCT:"+Integer.toOctalString(a)+"+"+Integer.toOctalString(b)+"="+Integer.toOctalString(sum));
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = a + b;
+        System.out.println("DEC:" + a + "+" + b + "=" + sum);
+        System.out.println("BIN:" + Integer.toBinaryString(a) + "+" + Integer.toBinaryString(b) + "=" + Integer.toBinaryString(sum));
+        System.out.println("HEX:" + Integer.toHexString(a) + "+" + Integer.toHexString(b) + "=" + Integer.toHexString(sum));
+        System.out.println("OCT:" + Integer.toOctalString(a) + "+" + Integer.toOctalString(b) + "=" + Integer.toOctalString(sum));
     }
 
 }
