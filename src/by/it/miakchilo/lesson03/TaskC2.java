@@ -34,11 +34,12 @@ public class TaskC2 {
         но это допустимо лишь однажды.
         Да, ну и будем брать исходное число по модулю, чтобы получился совсем  общий случай :)
          */
+        int number_abs = number; if (number_abs<0) number_abs = number_abs*-1;
         int sumOfDigits=0;
         int divider=1;
         do {
             divider*=10;
-            int digit= (Math.abs(number)%divider) / (divider/10);
+            int digit= (number_abs%divider) / (divider/10);
             sumOfDigits += digit;
         } while (number%divider!=number);
         return sumOfDigits;
