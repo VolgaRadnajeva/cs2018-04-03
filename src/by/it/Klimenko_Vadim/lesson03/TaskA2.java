@@ -22,10 +22,12 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
+        String a="Скажи-ка, дядя, ведь не даром";
+        String b="Москва, спаленная пожаром,";
+        String c="Французу отдана?";
+        String d="Ведь были ж схватки боевые,";
+
         System.out.println("Мое любимое стихотворение:");
-        System.out.println("Мое любимоеsdsa стихотворение:");
-        System.out.println("Мое любимое стихоasdaтворение:");
-        System.out.println("Мое любимое стихотвоasdaрение:");
-        System.out.println("Мое любимое стиaasdхотворение:");
+        System.out.println(a+"\n" +b+"\n" +c+"\n" +d);
     }
 }
