@@ -22,10 +22,11 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
+        String a = "Прошло сто лет, и юный град";
+        String b = "Полнощных стран краса и диво,";
+        String c = "Из тьмы лесов, из топи блат";
+        String d = "Вознесся пышно, горделиво";
         System.out.println("Мое любимое стихотворение:");
-        System.out.println("df");
-        System.out.println("sd");
-        System.out.println("sd");
-        System.out.println("shgh");
+        System.out.println(a + "\n" + b + "\n" + c + "\n" +d);
     }
 }
