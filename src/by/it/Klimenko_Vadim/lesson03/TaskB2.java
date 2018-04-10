@@ -41,7 +41,6 @@ class TaskB2 {
         double y= (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
         return y;
     }
-
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
