@@ -1,4 +1,4 @@
-package by.it.halias.lesson02;
+package by.it.Halias.lesson02;
 
 import org.junit.Test;
 
