@@ -47,13 +47,13 @@ class TaskB2 {
         int result = dis(a, b, c);
         if (result > 0) {
             double x1, x2;
-            x1 = (-b + Math.sqrt(result)) / (2 * a);
-            x2 = (-b - Math.sqrt(result)) / (2 * a);
+            x1 = (-b + Math.sqrt(result)) / (2.0 * a);
+            x2 = (-b - Math.sqrt(result)) / (2.0 * a);
             System.out.println(x1 + " " + x2);
         } else {
             if (result == 0) {
                 double x;
-                x = -b / (2 * a);
+                x = -b / (2.0 * a);
                 System.out.println(x);
             } else {
                 System.out.println("Отрицательный дискриминант");
