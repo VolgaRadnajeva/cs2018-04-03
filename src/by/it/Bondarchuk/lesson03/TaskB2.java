@@ -40,12 +40,12 @@ class TaskB2 {
         System.out.println("Ввод:\n" + a + " " + b + " " + c);
         double x1, x2;
         if (dis(a, b, c) > 0) {
-            x1 = (-b + Math.sqrt(dis(a, b, c))) / (2 * a);
-            x2 = (-b - Math.sqrt(dis(a, b, c))) / (2 * a);
+            x1 = (-b + Math.sqrt(dis(a, b, c))) / (2.0 * a);
+            x2 = (-b - Math.sqrt(dis(a, b, c))) / (2.0 * a);
             System.out.println("Вывод:\n" + x1 + " " + x2);
         }
         else if (dis(a, b, c) == 0) {
-            x1 = (-b) / (2 * a);
+            x1 = (-b) / (2.0 * a);
             System.out.println("Вывод:\n" + x1);
         }
         else System.out.println("Вывод:\nОтрицательный дискриминант");
