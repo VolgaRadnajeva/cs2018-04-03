@@ -31,16 +31,12 @@ public class TaskA3 {
         int i1 = sc.nextInt(), i2 = sc.nextInt(), i3 = sc.nextInt();
         if (i1 == i2 && i2 == i3) {
             System.out.printf("%d %d %d", i1, i2, i3);
-        } else {
-            System.out.println(
-                    getEqualityString(i1, i2) + getEqualityString(i2, i3) + getEqualityString(i1, i3)
-            );
+        } else if (i1 == i2) {
+            System.out.printf("%d %d", i1, i2);
+        } else if (i2 == i3) {
+            System.out.printf("%d %d", i2, i3);
+        } else if (i1 == i3) {
+            System.out.printf("%d %d", i1, i3);
         }
-
     }
-    private static String getEqualityString(int i1, int i2) {
-        if (i1 == i2) return i1 + " " + i2;
-        return "";
-    }
-
 }

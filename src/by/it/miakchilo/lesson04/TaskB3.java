@@ -31,12 +31,11 @@ public class TaskB3 {
     public static void main(String[] args) {
         System.out.print("Введите потолок и нажмите [Enter]: ");
         Scanner scanner = new Scanner(System.in);
-        int i = scanner.nextInt();
-        int sum = 0, ceed = 1;
-        do {
-            if (sum != 0) System.out.print(sum + ",");
-            sum += ceed++;
-        } while (sum <= i);
+        int ceil = scanner.nextInt();
+        int sum = 1;
+        for(int ceed=sum+1; sum<=ceil; sum += ceed++)
+            System.out.print(sum+",");
         System.out.println();
+
     }
 }

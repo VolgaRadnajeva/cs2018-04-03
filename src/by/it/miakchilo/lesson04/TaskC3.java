@@ -24,5 +24,61 @@ package by.it.miakchilo.lesson04;
 */
 
 public class TaskC3 {
+    public static void main(String[] args) {
+        for (int i = 1; i <=10 ; i++) {
+            for (int j = 1; j <= 10 ; j++) {
+                System.out.println(getString(i) + " умножить на " + getString(j) + " равно " + getString(i*j));
+            }
+        }
+    }
+    private static String getString(int i) {
+        if(i<=0 || i>100) return ""; /* проверка на нелегальный ввод, на всякий случай */
+        switch (i) {                 /* перебираем названия цифр и числительные, не соответствующие общему правилу */
+            case 1:
+                return "один";
+            case 2:
+                return "два";
+            case 3:
+                return "три";
+            case 4:
+                return "четыре";
+            case 5:
+                return "пять";
+            case 6:
+                return "шесть";
+            case 7:
+                return "семь";
+            case 8:
+                return "восемь";
+            case 9:
+                return "девять";
+            case 10:
+                return "десять";
+            case 12:
+                return "двенадцать";
+            case 40:
+                return "сорок";
+            case 90:
+                return "девяносто";
+            case 100:
+                return "сто";
+        }
+        if (i<=13) {                      /* случаи чисел 11 и 13: название цифры во втором разряде + суффикс "надцать" */
+            return getString(i%10) + "надцать";
+        } else if (i<=19) {               /* случаи чисел 14.. 19: название цифры во втором разряде БЕЗ последней буквы + суффикс "надцать" */
+            String firstPart = getString(i%10);
+            return firstPart.substring(0, firstPart.length()-1) + "надцать";
+            // есть более читабельное и логичное решение по отсечению последнего символа в конструкциях
+            // "четыр.. надцать", "пят..надцать", "шест.. надцать" и т.п. с помощью регулярного выражения
+            // return getString(i%10).replaceAll("[еь]$","")+ "надцать";
 
+        } else if (i%10==0) {             /* теперь названия чисел, кратных 10: отдельно для 20 и 30, отдельно для 50, 60, 70, 80 */
+            if (i<40) return getString(i/10) + "дцать";
+            else return getString(i/10) + "десят";
+        } else {                          /* названия всех остальных чисел в виде: название числа, кратного 10-ти + название цифры в младшем разряде
+                                             например, "пятьдесят" + "шесть", "девяносто" + "три" */
+            return getString(i-i%10) + " " + getString(i%10);
+        }
+
+    }
 }
