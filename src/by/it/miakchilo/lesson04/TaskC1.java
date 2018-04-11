@@ -39,7 +39,6 @@ package by.it.miakchilo.lesson04;
 
 
 import java.util.Scanner;
-
 public class TaskC1 {
     public static void main(String[] args) {
         System.out.println("Какую вы хотите зарплату в $$$? ");
