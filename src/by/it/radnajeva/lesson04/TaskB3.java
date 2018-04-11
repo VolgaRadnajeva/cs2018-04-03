@@ -35,8 +35,12 @@ public class TaskB3 {
         int sum;
         for (sum = 0; sum < a; ) {
             sum = b + sum;
-            System.out.print(sum + ",");
             b++;
+            if (sum <= a)
+                System.out.print(sum + ",");
+
+            else
+            break;
 
         }
     }
