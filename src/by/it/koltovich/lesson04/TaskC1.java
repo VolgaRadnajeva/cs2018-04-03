@@ -38,7 +38,39 @@ package by.it.koltovich.lesson04;
 */
 
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scanner=new Scanner(System.in);
+        double zzz=scanner.nextInt();
+        double res;
+        if (zzz<300 || zzz>3000)
+        System.out.println("Мы вам перезвоним!");
+        else
+        for (int month = 0; month <= 14; month++){
+            String strMonth;
+            if (month<6 || month>8) res=zzz*1.5; else res=zzz;
+            switch (month){
+                case 1: strMonth="январь";break;
+                case 2: strMonth="февраль";break;
+                case 3: strMonth="март";break;
+                case 4: strMonth="апрель";break;
+                case 5: strMonth="май";break;
+                case 6: strMonth="июнь";break;
+                case 7: strMonth="июль";break;
+                case 8: strMonth="август";break;
+                case 9: strMonth="сентябрь";break;
+                case 10: strMonth="октябрь";break;
+                case 11: strMonth="ноябрь";break;
+                case 12: strMonth="декабрь";break;
+                default: {strMonth="месяц "+month; res=0;}
+            }
+            System.out.println("За "+strMonth+" начислено $"+res);
+            if (res==666) break;
+        }
+    }
 
 
 }
