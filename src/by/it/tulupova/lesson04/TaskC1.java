@@ -38,7 +38,16 @@ package by.it.tulupova.lesson04;
 */
 
 
-public class TaskC1 {
+import java.util.Scanner;
 
+public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc=new Scanner (System.in);
+        int zzz=sc.nextInt();
+        if (zzz<300 || zzz>3000)
+            System.out.println("Мы вам перезвоним!");
+
+    }
 
 }
