@@ -41,15 +41,15 @@ package by.it.Klimenko_Vadim.lesson04;
 import java.util.Scanner;
 public class TaskC1 {
     public static void main(String[] args) {
-        System.out.println("Какую вы хотите зарплату в $$$? ");
+        System.out.println("Какую вы хотите зарплату в $$$? \n");
         Scanner scanner = new Scanner(System.in);
         int salary = scanner.nextInt();
+        double nachisleno;
+        String month_name="";
         if (salary < 300 || salary > 3000) {
             System.out.println("Мы вам перезвоним!");
         } else {
             for (int month = 0; month <= 14; month++) {
-                String month_name;
-                double nachisleno;
                 switch (month) {
                     case 1: month_name="январь"; break;
                     case 2: month_name="февраль"; break;
@@ -63,18 +63,18 @@ public class TaskC1 {
                     case 10: month_name="октябрь"; break;
                     case 11: month_name="ноябрь"; break;
                     case 12: month_name="декабрь"; break;
-                    default:
-                        month_name = "месяц " + month;
+                    default: month_name="месяц "+month; break;
                 }
-                nachisleno = salary;
-                if (month == 0 || month > 12) {
-                    nachisleno = 0.0;
-                } else if (month < 6 || month > 8) {
-                    nachisleno *= 1.5;
+                if (month==0||month>12)
+                    nachisleno=0.0;
+                else if (month>=6 && month<=8){
+                    nachisleno=salary;
                 }
-                System.out.println("За " + month_name + " начислено $" + nachisleno);
+                    else nachisleno=1.5*salary;
+                System.out.println("За "+month_name+" начислено $"+nachisleno);
                 if (nachisleno == 666.0) break;
             }
         }
     }
 }
+
