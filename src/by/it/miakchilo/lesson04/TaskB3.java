@@ -36,6 +36,5 @@ public class TaskB3 {
         for(int ceed=sum+1; sum<=ceil; sum += ceed++)
             System.out.print(sum+",");
         System.out.println();
-
     }
 }
