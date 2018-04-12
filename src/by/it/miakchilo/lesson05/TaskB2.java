@@ -26,17 +26,21 @@ import java.util.Scanner;
 public class TaskB2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int arr[] = new int[20];
-        int a[] = new int[10], b[] = new int[10];
+        int[] arr = new int[20];
+        int[] a = new int[10], b = new int[10];
         int i;
         System.out.println("Введите 20 чисел с клавиатуры");
         for (i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
-            if(i<=arr.length/2) a[i]= arr[i];
-            else b[i-10] = arr[i];
         }
-        /* for (i=0;i<arr.length;i++) {
-        } */
+        /* Решение 1 */
+        for (i = 0; i < arr.length; i++) {
+            if(i<arr.length/2) a[i]= arr[i];
+            else b[i-arr.length/2] = arr[i];
+        }
+        /* Решение 2 */
+        /*a = Arrays.copyOf(arr,10);
+        b = Arrays.copyOfRange(arr,10,20);*/
         System.out.println("a="+ Arrays.toString(a));
         System.out.println("b="+Arrays.toString(b));
     }
