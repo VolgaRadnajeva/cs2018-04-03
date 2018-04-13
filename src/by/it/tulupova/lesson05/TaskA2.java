@@ -1,6 +1,5 @@
 package by.it.tulupova.lesson05;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.ArrayList;
 import java.util.Scanner;
