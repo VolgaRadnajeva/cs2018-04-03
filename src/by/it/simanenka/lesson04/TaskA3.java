@@ -22,6 +22,24 @@ package by.it.simanenka.lesson04;
  */
 
 
-public class TaskA3 {
+import java.util.Scanner;
 
-}
+public class TaskA3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int j = sc.nextInt();
+        int k = sc.nextInt();
+        if (i == k && i == j) {
+            System.out.println(i +" " + k +" " +j );}
+            else if (i==j) {
+            System.out.println(i +" " +j);}
+            else if (k==j) {
+            System.out.println(k +" " +j);}
+            else if (i==k) {
+            System.out.println(i +" " +k);}
+
+    }
+
+    }
+

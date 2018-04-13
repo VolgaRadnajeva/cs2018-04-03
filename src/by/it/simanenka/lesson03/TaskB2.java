@@ -35,7 +35,6 @@ Lesson 03. Task B2. Нужно написать программу, котора
 */
 class TaskB2 {
     public static void main(String[] args) {
-        Scanner scanner +
     }
     public static double dis(int x, int y, int z) {
         return 0;
