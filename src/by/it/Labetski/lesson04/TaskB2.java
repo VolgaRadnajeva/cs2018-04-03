@@ -1,5 +1,7 @@
 package by.it.Labetski.lesson04;
 
+import java.util.Scanner;
+
 /*
 Таблица умножения
 Вывести на экран таблицу умножения size х size используя цикл while.
@@ -25,4 +27,7 @@ size прочитать c клавиатуры. Числа разделить п
  */
 public class TaskB2 {
 
-}
+        }
+
+
+

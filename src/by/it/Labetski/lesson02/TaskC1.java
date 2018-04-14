@@ -1,5 +1,7 @@
 package by.it.Labetski.lesson02;
 
+import java.util.Scanner;
+
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде
 
@@ -10,7 +12,6 @@ package by.it.Labetski.lesson02;
 Sum = 26
 */
 class TaskC1 {
-
 
 
 
