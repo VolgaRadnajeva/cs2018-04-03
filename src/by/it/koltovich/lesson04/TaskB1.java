@@ -28,5 +28,26 @@ import java.util.Scanner;
 
 */
 public class TaskB1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        int x = 0;
+        if (i % 4 != 0) {
+            x = 365;
+        } else {
+            if (i % 100 == 0) {
+                if (i % 400 == 0) {
+                    x = 365;
+                }
+                else {
+                    x = 365;
+                }
+            }
+            else {
+                x = 366;
+            }
+        }
+        System.out.println("количество дней в году: " + x);
 
+    }
 }
