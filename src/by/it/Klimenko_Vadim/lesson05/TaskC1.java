@@ -10,13 +10,33 @@ package by.it.Klimenko_Vadim.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[20];
+        ArrayList<Integer> mulOf3 = new ArrayList<Integer>();
+        ArrayList<Integer> mulOf2 = new ArrayList<Integer>();
+        ArrayList<Integer> rest = new ArrayList<Integer>();
 
+        System.out.println("Введите 20 чисел с клавиатуры");
 
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+            rest.add(arr[i]);
+
+            if(arr[i] % 3 ==0) mulOf3.add(arr[i]);
+            if(arr[i] % 2 ==0) mulOf2.add(arr[i]);
+        }
+        rest.removeAll(mulOf2);
+        rest.removeAll(mulOf3);
+
+        printList(mulOf3);
+        printList(mulOf2);
+        printList(rest);
     }
 
     private static void printList(List<Integer> list) {
