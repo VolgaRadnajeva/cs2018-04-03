@@ -1,5 +1,7 @@
 package by.it.koltovich.lesson04;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
