@@ -20,6 +20,24 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
-public class TaskB2 {
+import java.util.Arrays;
+import java.util.Scanner;
 
+public class TaskB2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[20];
+        int[] a = new int[10], b = new int[10];
+        int i;
+        System.out.println("Введите 20 чисел с клавиатуры");
+        for (i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (i = 0; i < arr.length; i++) {
+            if(i<arr.length/2) a[i]= arr[i];
+            else b[i-arr.length/2] = arr[i];
+        }
+        System.out.println("a="+ Arrays.toString(a));
+        System.out.println("b="+Arrays.toString(b));
+    }
 }

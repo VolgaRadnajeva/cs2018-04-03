@@ -22,8 +22,6 @@ package by.it.Klimenko_Vadim.lesson05;
 1
 
 */
-
-
 import java.util.Scanner;
 
 public class TaskA1 {
@@ -33,8 +31,8 @@ public class TaskA1 {
         for (int i = arr.length-1;  i>=0 ; i--) {
             arr[i]=sc.nextInt();
         }
-        for (int element:arr) {
-            System.out.println(element);
+        for (int i=0;i<10;i++){
+            System.out.println(arr[i]);
         }
     }
 
