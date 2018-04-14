@@ -28,7 +28,6 @@ public class TaskA2 {
         Scanner scanner = new Scanner(System.in);
         for (; ; ) {
             String str = scanner.next();
-            String str;
             if (str.equals("END")) break;
             arr.add(str);
         }

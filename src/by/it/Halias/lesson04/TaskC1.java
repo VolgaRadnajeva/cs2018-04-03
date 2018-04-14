@@ -51,7 +51,7 @@ public class TaskC1 {
 
             for (int month=0; month<14; month++){
                 String strMonth;
-                if (month<6 || month>8) res=zzz*=1.5 else res=
+                if (month<6 || month>8) res=zzz*1.5; else res=zzz;
                 switch (month) {
                     case 1: strMonth="январь"; break;
                     case 2: strMonth="февраль"; break;
@@ -69,7 +69,7 @@ public class TaskC1 {
                 }
 
                 System.out.println("За"+strMonth+" начислено $"+res);
-                if (zzz=-666) break;
+                if (zzz==-666) break;
             }
 
     }
