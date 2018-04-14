@@ -38,7 +38,75 @@ package by.it.radnajeva.lesson04;
 */
 
 
-/*import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        double zzz = sc.nextInt();
+        double result;
+        if (zzz < 300 || zzz > 3000)
+            System.out.println("Мы вам перезвоним!");
+        else
+
+        for (int month = 0; month <= 14; month++) {
+            String strMonth;
+            if (month < 6 || month > 8) result=zzz * 1.5; else result=zzz;
+
+            switch (month) {
+
+                case 1:
+                    strMonth = "январь";
+                    break;
+                case 2:
+                    strMonth = "февраль";
+                    break;
+                case 3:
+                    strMonth = "март";
+                    break;
+                case 4:
+                    strMonth = "апрель";
+                    break;
+                case 5:
+                    strMonth = "май";
+                    break;
+                case 6:
+                    strMonth = "июнь";
+                    break;
+                case 7:
+                    strMonth = "июль";
+                    break;
+                case 8:
+                    strMonth = "август";
+                    break;
+                case 9:
+                    strMonth = "сентябрь";
+                    break;
+                case 10:
+                    strMonth = "октябрь";
+                    break;
+                case 11:
+                    strMonth = "ноябрь";
+                    break;
+                case 12:
+                    strMonth = "декабрь";
+                    break;
+                default:
+                {strMonth = "месяц " + month; result=0;}
+
+            }
+            System.out.println("За " + strMonth + " начислено $"+result);
+            if (result == 666) break;
+
+
+        }
+    }}
+
+
+
+    /*import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) {
@@ -114,67 +182,3 @@ public class TaskC1 {
 }
 
 */
-import java.util.Scanner;
-
-public class TaskC1 {
-    public static void main(String[] args) {
-        System.out.println("Какую вы хотите зарплату в $$$?");
-        Scanner sc = new Scanner(System.in);
-        double zzz = sc.nextInt();
-        double result;
-        if (zzz < 300 || zzz > 3000)
-            System.out.println("Мы вам перезвоним!");
-        else
-
-        for (int month = 0; month <= 14; month++) {
-            String strMonth;
-            if (month < 6 || month > 8) result=zzz * 1.5; else result=zzz;
-
-            switch (month) {
-
-                case 1:
-                    strMonth = "январь";
-                    break;
-                case 2:
-                    strMonth = "февраль";
-                    break;
-                case 3:
-                    strMonth = "март";
-                    break;
-                case 4:
-                    strMonth = "апрель";
-                    break;
-                case 5:
-                    strMonth = "май";
-                    break;
-                case 6:
-                    strMonth = "июнь";
-                    break;
-                case 7:
-                    strMonth = "июль";
-                    break;
-                case 8:
-                    strMonth = "август";
-                    break;
-                case 9:
-                    strMonth = "сентябрь";
-                    break;
-                case 10:
-                    strMonth = "октябрь";
-                    break;
-                case 11:
-                    strMonth = "ноябрь";
-                    break;
-                case 12:
-                    strMonth = "декабрь";
-                    break;
-                default:
-                {strMonth = "месяц " + month; result=0;}
-
-            }
-            System.out.println("За " + strMonth + " начислено $"+result);
-            if (result == 666) break;
-
-
-        }
-    }}

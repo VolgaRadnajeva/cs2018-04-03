@@ -36,10 +36,16 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 class TaskC3 {
+    public static double getWeight(int weight) {
+        double onMarth=weight*3.86/9.81;
+        onMarth = new BigDecimal(onMarth).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
+        return onMarth;
+    }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
+        int weight=sc.nextInt();
+        System.out.println(getWeight(weight));
 
 
     }

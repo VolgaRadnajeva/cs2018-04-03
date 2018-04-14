@@ -10,6 +10,29 @@ package by.it.radnajeva.lesson05;
 */
 
 
-public class TaskB1 {
+import java.util.ArrayList;
 
-}
+public class TaskB1 {
+    public static void main(String[] args) {
+
+        ArrayList<String> arr = new ArrayList<>();
+        arr.add(0, "first string");
+        arr.add(1, "second string");
+        arr.add(2, "third string");
+        arr.add(3, "fourth string");
+        arr.add(4, "fifth string");
+
+
+        int size = arr.size();
+        System.out.println(size);
+        for (
+                int i = 0; i < arr.size(); i++)
+
+    /*    {
+            int j = arr.size() - i - 1;*/
+
+            System.out.println(arr.get(i));
+        }
+
+    }
+//}
