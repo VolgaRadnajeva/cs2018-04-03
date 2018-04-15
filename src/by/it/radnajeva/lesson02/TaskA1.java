@@ -9,7 +9,7 @@ Hello world!
 Для ручной проверки запустите программу Ctrl+Shift+F10
 Для автоматической проверки откройте и запустите класс Testing
 */
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         System.out.println("Hello world!");
     }
 }
