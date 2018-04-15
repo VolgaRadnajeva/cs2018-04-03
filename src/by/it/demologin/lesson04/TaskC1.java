@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson04;
+package by.it.demologin.lesson04;
 
 /*
 Напишите программу которая спрашивает у пользователя:
@@ -36,6 +36,8 @@ package by.it._tasks_.lesson04;
 За месяц 14 начислено $0.0
 
 */
+
+
 public class TaskC1 {
 
 
